@@ -17,6 +17,7 @@
       // Load shoppingCart.html
       $("#shoppingCart").load("template/shoppingCart/shoppingCart.html");
 
+    });
         // if the user clicks the .card div (goblin item)
   $(".card").click(function () {
     let products = [];
@@ -29,6 +30,7 @@
     const itemElement = $(this).find(".card-text").text(); // Supreme Goblin$100
     const itemName = itemElement.split("$")[0]; // Supreme Goblin
     const itemPrice = itemElement.split("$")[1]; // 100
+    const imagePath = $(this).find(".card-img-top").attr('src');
 
 
 
@@ -47,6 +49,7 @@
         name: itemName,
         price: itemPrice,
         quantity: 1,
+        img: imagePath,
       });
     }
 
@@ -58,4 +61,3 @@
       $(".numberOfItems").text(products.length);
     });
   });
-});

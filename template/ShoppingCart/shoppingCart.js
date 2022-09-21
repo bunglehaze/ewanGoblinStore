@@ -16,14 +16,16 @@ $(document).ready(function () {
       let modalBody = $(".modal-body");
       modalBody.empty(); // empty the initial contents of modal body before adding new items
 
-      // render products name, price, and quantity
+      // render products name, price, image and quantity
       products.map((product) => {
         modalBody.append(
           `<div class="productWrapper" id="${product.name}">
                 <div id="productInfo">
                   <div class="name">${product.name} - $${product.price}/item</div>
                   <div class="quantity">x ${product.quantity}</div>
+                  <div class="productImage w-75"> <img class="card-img-top" src="${product.img}"></div>
                 </div>
+                <div class="
                 <div id="actions">
                   <button class="btn btn-primary increaseQuantity" id="${product.name}">
                     +
@@ -49,6 +51,7 @@ $(document).ready(function () {
           .closest(".productWrapper") // get the closest productWrapper div
           .find(".quantity") // get the quantity div
           .text(`x ${product.quantity}`); // update the text of the quantity
+          $(".numberOfItems").text(products.length);
 
         // update the items in localStorage
         localStorage.setItem("items", JSON.stringify(products));
@@ -59,7 +62,9 @@ $(document).ready(function () {
         let productName = $(this).attr("id");
         // match the productName to the selected item inside products array
         let product = products.find((product) => product.name === productName);
-        // then increase the selected item quantity by 1
+        if (product.quantity > 0) {
+          
+        // then decrease the selected item quantity by 1
         product.quantity--;
 
         // update the quantity div's text - go up to productWrapper level, and then find the div with .quantity class
@@ -67,11 +72,12 @@ $(document).ready(function () {
           .closest(".productWrapper") // get the closest productWrapper div
           .find(".quantity") // get the quantity div
           .text(`x ${product.quantity}`); // update the text of the quantity
-
+          $(".numberOfItems").text(products.length);
+          
         // update the items in localStorage
         localStorage.setItem("items", JSON.stringify(products));
+        }
       });
-
     }
   });
 });

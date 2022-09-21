@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>The Devil Fryer</title>
+  <link rel="icon" type="image/ico" href="./pics/tiny.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  <link href="main.css" rel="stylesheet">
+  <!-- Load jQuery from a cdn (cloudflare) -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header"></div>
+<form>
+ <div class="container">
+    <div class="row justify-content-md-evenly">
+      <div class="col col-lg-4">
+        <b>Billing Details</b><br><br>
+          <div class="first_name">
+            <label class="form-label" for="firstName"><b>First Name</b></label>
+            <input type="text" id="firstName" class="form-control" name="firstName" placeholder="First Name" pattern="[a-zA-Z]{1,15}" />
+          </div><br>
+          <div class="last_name">
+            <label class="form-label" for="lastName"><b>Last Name</b></label>
+            <input type="text" id="lastName" class="form-control" name="lastName" placeholder="Last Name" pattern="[a-zA-Z][{1,15}" />
+          </div><br>          
+          <div class="address_1">
+            <label class="form-label" for="addressOne"><b>Address 1</b></label>
+            <input type="text" id="addressOne" class="form-control" name="address" placeholder="Address 1" pattern="[0-9]{1,3}{[a-zA-Z]{1,20}" />
+          </div><br>
+          <div class="address_2">
+            <label class="form-label" for="addressTwo"><b>Address 2</b></label>
+            <input type="text" id="addressTwo" class="form-control" name="address2" placeholder="Address 2" pattern="[a-zA-Z]{1,20}" />
+          </div><br>
+          <div class="town_city">
+            <label class="form-label" for="townCity"><b>Town/City</b</label>
+            <input type="text" id="townCity" class="form-control" name="townCity" placeholder="Town/City" pattern="[a-zA-Z]{1,20}" />
+          </div><br>
+          <div class="post_code">
+            <label class="form-label" for="postCode"><b>Post Code</b></label>
+            <input type="text" id="postCode" class="form-control" name="postCode" placeholder="Post Code" pattern="[a-zA-Z]{2}[0-9]{1}[0-9]{1}[a-zA-Z]{2}" />
+          </div><br>
+          <div class="contact_no">
+            <label class="form-label" for="contactNum"><b>Contact Number</b></label>
+            <input type="text" id="contactNum" class="form-control" name="contactNumber" placeholder="Contact Number" pattern="[0-9] maxlength="11" />
+          </div><br>
+          <div class="card_no">
+            <label class="form-label" for="cardNum"></label><b>Credit Card Details</b><br>
+            <input class="inputCard" id="cardNum" type="tel" inputmode="numeric" pattern="[0-9\s]{16}" autocomplete="cc-number" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" ><br><br>
+          </div>
+          <div class="cardExp">
+            <label class="form-label" for="cardExp"><b>Card Expiry</b></label><br>
+            <input class="inputCard" id="cardExp" name="expiry" id="expiry" /><br><br>
+          </div>
+          <div class="ccvNum">
+            <label class="form-label" for="ccvNum"><b>CCV</b></label><br>
+            <input class="inputCard" name="ccv" id="ccv" pattern="[0-9]{3}" type="text" placeholder="3 digit code"/><br><br>
+          </div>
+          <div class="submit">
+            <input type ="submit" id="submit" name="submit">
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</form>
+    <!-- Shopping Cart Button -->
+    <div id="shoppingCart"></d>
+  
+    <!-- Footer -->
+    <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script>
+    // on document ready
+    $(document).ready(() => {
+      // Load the header.html into the header div, once it's loaded execute callback to add class to headerHome div
+      $("#header").load("template/header/header.html", () => {
+        $("#headerContactUs")
+          .removeClass()
+          .addClass("nav-link active text-black fw-bold");
+      });
+
+      // Load the footer.html into the footer div, once it's loaded execute callback to add class to footerHome div
+      $("#footer").load("template/footer/footer.html", () => {
+        $("#footerContactUs")
+          .removeClass()
+          .addClass("nav-link active text-black fw-bold");
+      });
+
+      // Load shoppingCart.html
+      $("#shoppingCart").load("template/shoppingCart/shoppingCart.html");
+    });
+  </script>
+  <script src="checkout.js"></script>
+</body>
+</html>

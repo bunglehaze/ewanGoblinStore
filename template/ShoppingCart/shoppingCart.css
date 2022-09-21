@@ -14,13 +14,13 @@
 
   cursor: pointer;
 
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
 .buttonWrapper:hover {
-  background-color: #000;
+  background-color: rgb(39, 42, 236);
   color: #fff;
 }
 
@@ -30,7 +30,7 @@
   right: 5%;
   height: 30px;
   width: 30px;
-  background-color: red;
+  background-color: rgb(10, 10, 10);
   border-radius: 50%;
 
   display: flex;
