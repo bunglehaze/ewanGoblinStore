@@ -74,6 +74,9 @@ $(document).ready(function () {
           .text(`x ${product.quantity}`); // update the text of the quantity
           $(".numberOfItems").text(products.length);
           
+          if (product.quantity == 0) {
+            
+          }
         // update the items in localStorage
         localStorage.setItem("items", JSON.stringify(products));
         }
