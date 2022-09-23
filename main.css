@@ -173,8 +173,9 @@ body {
 .card {
   width: 14rem;
   margin: 2px 2px;
+  background-color: #ff0d05;
 }                      
- 
+
 /* Products */
 
 /* Checkout */

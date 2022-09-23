@@ -33,7 +33,7 @@ $(document).ready(function () {
                   <button class="btn btn-danger decreaseQuantity" id="${product.name}">
                     -
                   </button>               
-              </div>
+              /</div>
               `
         );
       });
@@ -75,8 +75,7 @@ $(document).ready(function () {
           $(".numberOfItems").text(products.length);
           
           if (product.quantity == 0) {
-            
-          }
+          } 
         // update the items in localStorage
         localStorage.setItem("items", JSON.stringify(products));
         }

@@ -63,9 +63,9 @@
       $(".numberOfItems").text(products.length);
     });
 
-    var toastLiveExample = document.getElementById('addItemToast');
-    var toast = new bootstrap.Toast(toastLiveExample);
-    toast.show();
+    var toastLiveExample = document.getElementById('addItemToast')
+    var toast = new bootstrap.Toast(toastLiveExample)
+    toast.show()
   });
 
 
