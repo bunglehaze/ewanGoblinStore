@@ -21,7 +21,7 @@ $(document).ready(function () {
         modalBody.append(
           `<div class="productWrapper" id="${product.name}">
                 <div id="productInfo">
-                  <div class="name">${product.name} - $${product.price}/item</div>
+                  <div class="name">${product.name} - £${product.price}/item</div>
                   <div class="quantity">x ${product.quantity}</div>
                   <div class="productImage w-75"> <img class="card-img-top" src="${product.img}"></div>
                 </div>

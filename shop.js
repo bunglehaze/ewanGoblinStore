@@ -19,7 +19,7 @@
 
     });
         // if the user clicks the .card div (goblin item)
-  $(".card").click(function () {
+  $(".add-item").click(function () {
     let products = [];
 
     // populate the products array with the current product's info
@@ -27,10 +27,12 @@
       products = JSON.parse(localStorage.getItem("items"));
     }
 
-    const itemElement = $(this).find(".card-text").text(); // Supreme Goblin$100
-    const itemName = itemElement.split("$")[0]; // Supreme Goblin
-    const itemPrice = itemElement.split("$")[1]; // 100
-    const imagePath = $(this).find(".card-img-top").attr('src');
+    const parentCard = $(this).closest('.card');
+
+    const itemElement = parentCard.find(".card-text").text(); // Deep Fried Ice Cream£10
+    const itemName = itemElement.split("£")[0]; // Deep Fried Ice Cream
+    const itemPrice = itemElement.split("£")[1]; // 10
+    const imagePath = parentCard.find(".card-img-top").attr('src');
 
 
 
@@ -60,4 +62,11 @@
     $("#shoppingCart").load("template/shoppingCart/shoppingCart.html", () => {
       $(".numberOfItems").text(products.length);
     });
+
+    var toastLiveExample = document.getElementById('addItemToast');
+    var toast = new bootstrap.Toast(toastLiveExample);
+    toast.show();
   });
+
+
+
