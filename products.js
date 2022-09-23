@@ -24,6 +24,27 @@ searchButton.addEventListener("click", ()=>{
     document.querySelector("#contentb").innerHTML += data.results[0].genres[0].name
     document.querySelector("#contentc").innerHTML += data.results[0].metacritic
     document.querySelector("#contentd").innerHTML += `<img src ="${data.results[0].short_screenshots[0].image}">`
+    document.querySelector("#contente").innerHTML += data.results[1].name
+    document.querySelector("#contentf").innerHTML += data.results[1].released
+    document.querySelector("#contentg").innerHTML += data.results[1].genres[0].name
+    document.querySelector("#contenth").innerHTML += data.results[1].metacritic
+    document.querySelector("#contenti").innerHTML += `<img src ="${data.results[1].short_screenshots[0].image}">`
+    document.querySelector("#contentj").innerHTML += data.results[16].name
+    document.querySelector("#contentk").innerHTML += data.results[16].released
+    document.querySelector("#contentl").innerHTML += data.results[16].genres[0].name
+    document.querySelector("#contentm").innerHTML += data.results[16].metacritic
+    document.querySelector("#contentn").innerHTML += `<img src ="${data.results[16].short_screenshots[0].image}">`
+    document.querySelector("#contento").innerHTML += data.results[11].name
+    document.querySelector("#contentp").innerHTML += data.results[11].released
+    document.querySelector("#contentq").innerHTML += data.results[11].genres[0].name
+    document.querySelector("#contentr").innerHTML += data.results[11].metacritic
+    document.querySelector("#contents").innerHTML += `<img src ="${data.results[11].short_screenshots[0].image}">`
+    document.querySelector("#contentt").innerHTML += data.results[10].name
+    document.querySelector("#contentu").innerHTML += data.results[10].released
+    document.querySelector("#contentv").innerHTML += data.results[10].genres[0].name
+    document.querySelector("#contentw").innerHTML += data.results[10].metacritic
+    document.querySelector("#contentx").innerHTML += `<img src ="${data.results[10].short_screenshots[0].image}">`
+
   } 
 
   /* let searchButton = document.querySelector("#search1")
@@ -51,7 +72,7 @@ searchButton.addEventListener("click", ()=>{
     document.querySelector("#contentf").innerHTML += data.results[1].released
     document.querySelector("#contentg").innerHTML += data.results[1].genres[0].name
     document.querySelector("#contenth").innerHTML += data.results[1].metacritic
-    document.querySelector("#contenti").innerHTML += `<img src ="${data.results[1].short_screenshots[0].image}">` */
+    document.querySelector("#contenti").innerHTML += `<img src ="${data.results[1].short_screenshots[0].image}">` 
   }
   
   let searchButton = document.querySelector("#search2")

@@ -8,6 +8,8 @@ Header
 Footer
 Main
 Shop
+Products
+Checkout
 About Us
 Contact Us
 */ 
@@ -166,11 +168,20 @@ Contact Us
     #####  #    #  ####  #       
   */ 
   .card {
-    width: 14rem;
+    width: 18rem;
     margin: 2px 2px;
-    text-align: left;
+    text-align: center;
   }                      
    
+   /* Products */
+
+   img {
+    position: width: 80px; height: 80px;
+  }
+
+  
+   /* Checkout */
+
   /*
       #                                 #     #        
      # #   #####   ####  #    # #####   #     #  ####  
