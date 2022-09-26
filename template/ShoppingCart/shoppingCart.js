@@ -21,8 +21,8 @@ $(document).ready(function () {
         modalBody.append(
           `<div class="productWrapper" id="${product.name}">
                 <div id="productInfo">
-                  <div class="name">${product.name} - £${product.price}/item</div>
-                  <div class="quantity">x ${product.quantity}</div>
+                  <div class="name">${product.name} - £${product.price}<br></div>
+                  <div class="quantity">Item x ${product.quantity}</div>
                   <div class="productImage w-75"> <img class="card-img-top" src="${product.img}"></div>
                 </div>
                 <div class="
@@ -73,13 +73,15 @@ $(document).ready(function () {
           .find(".quantity") // get the quantity div
           .text(`x ${product.quantity}`); // update the text of the quantity
           $(".numberOfItems").text(products.length);
-          
-          if (product.quantity == 0) {
-          } 
+
         // update the items in localStorage
         localStorage.setItem("items", JSON.stringify(products));
         }
       });
+      /* let cartQuantity = product.quantity
+      let cartPrice = product.price
+      let cartTotal = cartPrice*cartQuantity
+      document.getElementById('total').innerHTML = cartTotal; */
     }
   });
 });

@@ -61,7 +61,7 @@ body {
 		linear-gradient(
 			90deg,
 			transparent 10%,
-			rgba(0, 0, 90, 0.3) 10%,
+			rgba(0, 6, 90, 0.3) 10%,
 			rgba(0, 0, 90, 0.3) 20%,
 			transparent 20%,
 			transparent 22%,
@@ -86,7 +86,7 @@ body {
 			rgba(0, 0, 90, 0.3) 84%,
 			transparent 84%,
 			transparent 86%,
-			rgba(0, 0, 90, 0.3) 86%,
+			rgba(90, 0, 0, 0.3) 86%,
 			rgba(0, 0, 90, 0.3) 88%,
 			transparent 88%
 		),
@@ -178,8 +178,28 @@ body {
 
 /* Products */
 
+
 /* Checkout */
 
+.checkcontainer {
+	max-width: 960px;
+	text-align: center;
+  }
+  
+  .lh-condensed { line-height: 1.25; } 
+  
+h4 {
+	color: black;
+}
+
+#yourCart {
+	text-align: left;
+}
+
+#billAdd {
+	color: black;
+	font-weight: 600;
+}
 
 /*
     #                                 #     #        
@@ -201,25 +221,14 @@ body {
   #####   ####  #    #   #   #    #  ####    #      #####   ####  
 */
 
+.gmap_canvas {
+	text-align: center;
+}
 
-address {
-  margin: 0px;
+.mapouter {
+	text-align: center;
 }
-.card-img {
-  transition: transform 2s ease-out;
-  position: relative;
-}
-.card-img:hover {
-  transform: scale(2, 2);
-  object-fit: contain;
-  position: absolute;
-}
-.alert {
-  opacity: .2;
-  margin: 0px;
-  padding: 0px;
-}
-.alert, p {
-  color: black;
-  opacity: .9;
+
+.loc {
+	text-align: center;
 }
