@@ -7,7 +7,7 @@
     <title>The Devil Fryer</title>
     <link rel="icon" type="image/ico" href="./pics/deepfryer.jfif" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="main.css" rel="stylesheet" />
+    <link href="checkout.css" rel="stylesheet" />
 
     <!-- Load jQuery from a cdn (cloudflare) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -18,7 +18,111 @@
     <div id="header"></div>
 
     <div class="checkcontainer mx-auto">
-      <div class="py-5 text-center">
+        <h3 class="text-center p-3" id="submitDetails">Please submit your details</h3>
+    <div class="container mb-4">
+        <div class="row pt-2 pb-4">
+            <div class="col-lg-8">
+                <form action="#">
+                    <div class="row pt-4">
+                        <div class="col-lg-6 pl-0">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Address" id="Address"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="City" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 pl-0">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="County" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pr-0 mob-pl-0">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="Post Code" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mob-pl-0">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Name on card" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Enter Card number" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 pl-0">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="mm/yy" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pr-0 mob-pl-0">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="CVV" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 p-0 text-center">
+                                    <p class="mb-1 pb-2" id="acceptedCards">Accepted Cards</p>
+                                    <img src=".\pics\payment.png" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-4 pt-1">
+                <div class="row pt-4">
+                    <div class="col-8">
+                        <h3 class="mb-0 pb-2">Cart</h3>
+                    </div>
+                    <div class="col-4">
+                        <h3 class="mb-0 pb-2"></h3>
+                    </div>
+                </div>
+                <div class="row  pt-2">
+                    <div class="col-8">
+                        <h5 class="pb-2"></h5>
+                        <h5 class="pb-2"></h5>
+                        <h5 class="pb-2"></h5>
+                    </div>
+                    <div class="col-4">
+                        <h5 class="pb-2"></h5>
+                        <h5 class="pb-2"></h5>
+                        <h5 class="pb-2"></h5>
+                    </div>
+                </div>
+                <div class="row border-top  border-dark">
+                    <div class="col-8">
+                        <h5 class="pt-2">Total</h5>
+                    </div>
+                    <div class="col-4">
+                        <h5 class="pt-2"></h5>
+                    </div>
+                </div>
+                <div class="row pb-5 pt-4">
+                    <div class="col-12">
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Shipping address same as
+                                billing
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Complete Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  <div class="py-5 text-center">
           <h2>Checkout</h2>
       </div>
       <div class="row" >
@@ -391,8 +495,7 @@
               </form>
           </div>
       </div>
-  </div>
-
+  </div> -->
     
 
     <!-- Shopping Cart Button -->
