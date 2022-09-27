@@ -8,9 +8,6 @@
     <link rel="icon" type="image/ico" href="./pics/deepfryer.jfif" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="main.css" rel="stylesheet" />
-
-    <!-- Load jQuery from a cdn (cloudflare) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </head>
 
   <body>
@@ -19,30 +16,35 @@
 
     <div class="row">
       <div class="column">
-        <div class="mapouter" width="100%" position="center"><br><br>
-          <p class="loc"><b><u>Our Location</u></b></p>
-            <div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=High%20Street,%20Clackmannan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-               </iframe><br>
-               <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>
-               <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
-               <!-- <img src="./pics/chippy.jpg" alt="picture of chipshop"> -->
-               <p><center><b>Address : The Devil Fryer, High Street, Clackmannan, FK10 1AB</b></center></p>
-               <p><center><b>Tel No : 01259 010101</b></center></p>
-            </div>
-        </div>
+    <div class="d-md-flex h-md-100 align-items-center mx-auto">
+
+      <!-- First Half -->
+      <div class="col-md-6 col-sm-12 p-0 h-md-100 mx-auto">
+          <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+              <div class="logoarea pt-5 pb-5">
+                <p id="shopLoc"><b>Our Location</b></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224.8780793602514!2d-3.756790084175825!3d56.107328180649645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48887e5e0a51c375%3A0xed7345f1b777c8c8!2sHigh%20St%2C%20Clackmannan!5e0!3m2!1sen!2suk!4v1664273196276!5m2!1sen!2suk" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
       </div>
-      <div class="column">
-        <div class="textContent">
+  
+      <!-- Second Half -->
+      <div class="col-md-6 col-sm-12 p-0 h-md-100 mx-auto">
+          <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+            <img src="./pics/chippy.jpg" width="300" height="200" alt="pic of chipshop">
+          </div>
+      </div>
           
-        </div>
-      </div>
-    </div>
+  </div>
 
     <!-- Shopping Cart Button -->
     <div id="shoppingCart"></div>
 
     <!-- Footer -->
     <div id="footer"></div>
+
+    <!-- Load jQuery from a cdn (cloudflare) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -54,14 +56,14 @@
       $(document).ready(() => {
         // Load the header.html into the header div, once it's loaded execute callback to add class to headerHome div
         $("#header").load("template/header/header.html", () => {
-          $("#headerHome")
+          $("#headerContactUs")
             .removeClass()
             .addClass("nav-link active text-black fw-bold");
         });
 
         // Load the footer.html into the footer div, once it's loaded execute callback to add class to footerHome div
         $("#footer").load("template/footer/footer.html", () => {
-          $("#footerHome")
+          $("#footerContactUs")
             .removeClass()
             .addClass("nav-link active text-black fw-bold");
         });

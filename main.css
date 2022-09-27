@@ -161,6 +161,11 @@ body {
 	;
 }
 
+h5 {
+	color: white;
+	font-weight: bold;
+}
+
 /*
   #####                       
  #     # #    #  ####  #####  
@@ -178,6 +183,9 @@ body {
 
 /* Products */
 
+.card-body{
+	background-color: #ff0d05;
+}
 
 /* Checkout */
 
@@ -231,4 +239,9 @@ h4 {
 
 .loc {
 	text-align: center;
+}
+
+#shopLoc {
+	color: black;
+	font-weight: bold;
 }

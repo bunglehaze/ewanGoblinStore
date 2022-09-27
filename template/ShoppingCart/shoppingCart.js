@@ -33,8 +33,8 @@ $(document).ready(function () {
                   <button class="btn btn-danger decreaseQuantity" id="${product.name}">
                     -
                   </button>               
-              /</div>
-              `
+              </div>
+          `
         );
       });
 
@@ -78,9 +78,10 @@ $(document).ready(function () {
         localStorage.setItem("items", JSON.stringify(products));
         }
       });
-      /* let cartQuantity = product.quantity
+     /* let cartQuantity = product.quantity
       let cartPrice = product.price
-      let cartTotal = cartPrice*cartQuantity
+      let subTotal = cartPrice*cartQuantity
+      let cartTotal = subTotal.toFixed(2);
       document.getElementById('total').innerHTML = cartTotal; */
     }
   });
