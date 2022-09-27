@@ -44,5 +44,10 @@ searchButton.addEventListener("click", ()=>{
     document.querySelector("#contentv").innerHTML += data.results[10].genres[0].name
     document.querySelector("#contentw").innerHTML += data.results[10].metacritic
     document.querySelector("#contentx").innerHTML += `<img src ="${data.results[10].short_screenshots[0].image}">`
+    document.querySelector("#contenty").innerHTML += data.results[3].name
+    document.querySelector("#contentz").innerHTML += data.results[3].released
+    document.querySelector("#contentaa").innerHTML += data.results[3].genres[0].name
+    document.querySelector("#contentbb").innerHTML += data.results[3].metacritic
+    document.querySelector("#contentcc").innerHTML += `<img src ="${data.results[3].short_screenshots[0].image}">`
 
   } 
