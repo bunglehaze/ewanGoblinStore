@@ -178,9 +178,10 @@ CSS File for checkout
   .form-control::placeholder {
 
       color: rgb(253, 251, 251);
+  }
 
-
-
+  .form-control:: {
+    color: antiquewhite;
   }
 
   .form-control {
@@ -205,19 +206,19 @@ CSS File for checkout
       outline: none;
       border: none;
 
-      border-bottom: 2px solid #495057;
+      border-bottom: 2px solid #f7f8fa;
       outline: 0;
   }
 
   .form-control:hover {
-      border-bottom: 2px solid #495057;
+      border-bottom: 2px solid #f7f9fa;
       outline: none;
       border-color: none;
   }
 
   .container {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px rgba(7, 0, 0, 0.5);
+      background-color: rgba(8, 8, 8, 0.5);
       border-radius: 8px;
   }
 

@@ -1,0 +1,13 @@
+ //total shopping cart
+              let total = 0
+              //for the number of products in local storage do this
+              for (i in products){
+                let x = products[i].quantity;
+                let n = products[i].price;
+                let calc = x * n;
+                total = total + calc;
+              };
+              $("#checkoutTotal").append("Total = £ "+total.toFixed(2));
+    
+           } 
+          });    
