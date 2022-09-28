@@ -45,6 +45,7 @@ $(document).ready(function () {
         let product = products.find((product) => product.name === productName);
         // then increase the selected item quantity by 1
         product.quantity++;
+        calcQuantity(product);
 
         // update the quantity div's text - go up to productWrapper level, and then find the div with .quantity class
         $(this)
@@ -66,6 +67,7 @@ $(document).ready(function () {
           
         // then decrease the selected item quantity by 1
         product.quantity--;
+        calcQuantity(product);
 
         // update the quantity div's text - go up to productWrapper level, and then find the div with .quantity class
         $(this)
@@ -78,11 +80,15 @@ $(document).ready(function () {
         localStorage.setItem("items", JSON.stringify(products));
         }
       });
-     /* let cartQuantity = product.quantity
+     /* For calculating the total price of cart */
+     function calcQuantity (product) {
+      let cartQuantity = product.quantity
       let cartPrice = product.price
       let subTotal = cartPrice*cartQuantity
       let cartTotal = subTotal.toFixed(2);
-      document.getElementById('total').innerHTML = cartTotal; */
+      document.getElementById('total').innerHTML = cartTotal;
+     }
+      
     }
   });
 });
