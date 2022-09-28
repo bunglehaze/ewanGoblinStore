@@ -101,28 +101,32 @@
     </div>
   </div>
 
-  <div class="toast" role="alert" id="addItemToast" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <img src="./pics/deepfryer.jfif" class="rounded me-2" width="30" height="30" alt="...">
-      <strong class="me-auto">The Devil Fryer</strong>
-      <button type="button" class="btn-close" id="liveToastBtn" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-      The item has been added
-    </div>
+  <!-- Toast -->
+  <div aria-live="polite" aria-atomic="true">
+      <!-- Content and position of Toast -->
+      <div style="position: absolute; top: 34rem; right: 0;">
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000" id="addItemToast">
+              <div class="toast-header">
+                <img src="./pics/deepfryer.jfif" class="rounded me-2" width="30" height="30" alt="...">
+                  <strong class="mr-auto">The Devil Fryer</strong>
+                  <button type="button" class="btn-close" id="liveToastBtn" data-bs-dismiss="toast" aria-label="Close"><span aria-hidden="true"></span></button>
+              </div>
+            <div class="toast-body">
+                Item has been added
+            </div>
+          </div>
+      </div>
   </div>
 
-    <!-- Shopping Cart Button -->
-    <div id="shoppingCart"></div>
+  <!-- Shopping Cart Button -->
+  <div id="shoppingCart"></div>
 
     <!-- Footer -->
     <div id="footer"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  <script src="shop.js">
-    // This is where the code existed
-</script>
+  <script src="shop.js"></script>
 
 </body>
 </html>

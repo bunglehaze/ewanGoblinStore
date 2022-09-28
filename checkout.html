@@ -26,7 +26,7 @@
                     <div class="row pt-4">
                         <div class="col-lg-6 pl-0">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Full Name" id="fullName" pattern=[A-Za-z] required>
+                                <input type="text" class="form-control" placeholder="Full Name" id="fullName" pattern=^[A-Za-z]*$ required>
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Email" id="email" required>
@@ -46,14 +46,14 @@
                                 </div>
                                 <div class="col-lg-6 pr-0 mob-pl-0">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" placeholder="Post Code" id="postCode" pattern=[a-zA-Z]{2}[0,9]{1,2}[0,9]{1}[a-zA-Z]{2} required>
+                                        <input type="text" class="form-control" placeholder="Post Code" id="postCode" pattern=[a-zA-Z]{2}[0,9]{1,2}[0,9]{1}[a-zA-Z]{2} required>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mob-pl-0">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Name on card" id="cardName" pattern=[a-zA-Z]{40}  required>
+                                <input type="text" class="form-control" placeholder="Enter Name on card" id="cardName" pattern=[a-zA-Z]{40} required>
                             </div>
                             <div class="form-group">
                                 <input type="number" class="form-control" placeholder="Enter Card number" id="cardNum" pattern=[0,9]{4}\s[0,9]{4}\s[0,9]{4}\s[0,9]{4}  required>

@@ -200,7 +200,7 @@ CSS File for checkout
       box-shadow: none;
       outline: none;
       border: none;
-
+      color: #fff;
       border-bottom: 2px solid #f7f8fa;
       outline: 0;
   }
