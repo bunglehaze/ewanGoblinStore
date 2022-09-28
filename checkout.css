@@ -180,10 +180,6 @@ CSS File for checkout
       color: rgb(253, 251, 251);
   }
 
-  .form-control:: {
-    color: antiquewhite;
-  }
-
   .form-control {
       height: 50px;
       border: none;

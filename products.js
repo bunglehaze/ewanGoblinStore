@@ -49,5 +49,4 @@ searchButton.addEventListener("click", ()=>{
     document.querySelector("#contentaa").innerHTML += data.results[3].genres[0].name
     document.querySelector("#contentbb").innerHTML += data.results[3].metacritic
     document.querySelector("#contentcc").innerHTML += `<img src ="${data.results[3].short_screenshots[0].image}">`
-
   } 
