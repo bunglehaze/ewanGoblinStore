@@ -26,52 +26,52 @@
                     <div class="row pt-4">
                         <div class="col-lg-6 pl-0">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Full Name" pattern=[A-Za-z] required>
+                                <input type="text" class="form-control" placeholder="Full Name" id="fullName" pattern=[A-Za-z] required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email" required>
+                                <input type="email" class="form-control" placeholder="Email" id="email" required>
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control" rows="5" placeholder="Address" id="Address" pattern=[0,9]{1,4}\s[a-zA-Z]{1,40}
                                     required></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="City" pattern=[a-zA-Z]{60} required>
+                                <input type="text" class="form-control" placeholder="City" id="city" pattern=[a-zA-Z]{60} required>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 pl-0">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="County" pattern=[a-zA-Z]{30} required>
+                                        <input type="text" class="form-control" placeholder="County" id="county" pattern=[a-zA-Z]{30} required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 pr-0 mob-pl-0">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" placeholder="Post Code" pattern=[a-zA-Z]{2}[0,9]{1,2}[0,9]{1}[a-zA-Z]{2} required>
+                                        <input type="number" class="form-control" placeholder="Post Code" id="postCode" pattern=[a-zA-Z]{2}[0,9]{1,2}[0,9]{1}[a-zA-Z]{2} required>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mob-pl-0">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Name on card" pattern=[a-zA-Z]{40}  required>
+                                <input type="text" class="form-control" placeholder="Enter Name on card" id="cardName" pattern=[a-zA-Z]{40}  required>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" placeholder="Enter Card number" pattern=[0,9]{4}\s[0,9]{4}\s[0,9]{4}\s[0,9]{4}  required>
+                                <input type="number" class="form-control" placeholder="Enter Card number" id="cardNum" pattern=[0,9]{4}\s[0,9]{4}\s[0,9]{4}\s[0,9]{4}  required>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 pl-0">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="mm/yy" required>
+                                        <input type="text" class="form-control" placeholder="mm/yy" id="expDate" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 pr-0 mob-pl-0">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" placeholder="CVV" pattern=[0,9]{3} required>
+                                        <input type="number" class="form-control" placeholder="CVV" id="ccvNum" pattern=[0,9]{3} required>
                                     </div>
                                 </div>
                                 <div class="col-md-12 p-0 text-center">
                                     <p class="mb-1 pb-2" id="acceptedCards">Accepted Cards</p>
-                                    <img src=".\pics\payment.jpg" class="w-100">
+                                    <img src=".\pics\payment.png" alt="picture of bank cards" class="w-100">
                                 </div>
                             </div>
                         </div>
