@@ -87,6 +87,7 @@ $(document).ready(function () {
       let subTotal = cartPrice*cartQuantity
       let cartTotal = subTotal.toFixed(2);
       document.getElementById('total').innerHTML = cartTotal;
+      document.getElementById('shopTotal').innerHTML = cartTotal;
      }
       
     }
