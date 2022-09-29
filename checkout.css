@@ -246,4 +246,8 @@ CSS File for checkout
       max-width: 960px;
       text-align: center;
     }
-  }    
+  }
+  
+  .pt-2, .mb-0 {
+    color: white;
+  }

@@ -80,14 +80,14 @@ $(document).ready(function () {
         localStorage.setItem("items", JSON.stringify(products));
         }
       });
-     /* For calculating the total price of cart */
+
+     // For calculating the total price of cart
      function calcQuantity (product) {
       let cartQuantity = product.quantity
       let cartPrice = product.price
       let subTotal = cartPrice*cartQuantity
       let cartTotal = subTotal.toFixed(2);
-      document.getElementById('total').innerHTML = cartTotal;
-      document.getElementById('shopTotal').innerHTML = cartTotal;
+      document.getElementById('total').innerHTML = "Total: £ " + cartTotal;
      }
       
     }

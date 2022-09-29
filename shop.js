@@ -18,7 +18,7 @@
       $("#shoppingCart").load("template/shoppingCart/shoppingCart.html");
 
     });
-        // if the user clicks the .card div (goblin item)
+        // User clicks on Add Item button
   $(".add-item").click(function () {
     let products = [];
 
@@ -61,6 +61,7 @@
     // Open shoppingCartButton.html and update .numberOfItems div
     $("#shoppingCart").load("template/shoppingCart/shoppingCart.html", () => {
       $(".numberOfItems").text(products.length);
+      document.getElementById('total').append();
     });
 
     var toastLiveExample = document.getElementById('addItemToast')
