@@ -1,12 +1,11 @@
+let products = [];
 $(document).ready(function () {
-  let product = [];
-
-  let itemNumber = 0;
+  
   if (localStorage.getItem("items")) {
     products = JSON.parse(localStorage.getItem("items"));
-    itemNumber = products.length;
   }
-  $(".numberOfItems").text(itemNumber);
+  calcCartData(products);
+});
 
   // when the user clicks the shopping cart button, update .modal-body with the items in the cart
   $(".buttonWrapper").click(function () {
@@ -45,14 +44,13 @@ $(document).ready(function () {
         let product = products.find((product) => product.name === productName);
         // then increase the selected item quantity by 1
         product.quantity++;
-        calcQuantity(product);
+        calcCartData(products);
 
         // update the quantity div's text - go up to productWrapper level, and then find the div with .quantity class
         $(this)
           .closest(".productWrapper") // get the closest productWrapper div
           .find(".quantity") // get the quantity div
           .text(`x ${product.quantity}`); // update the text of the quantity
-          $(".numberOfItems").text(products.length);
 
         // update the items in localStorage
         localStorage.setItem("items", JSON.stringify(products));
@@ -67,29 +65,33 @@ $(document).ready(function () {
           
         // then decrease the selected item quantity by 1
         product.quantity--;
-        calcQuantity(product);
+        calcCartData(products);
 
         // update the quantity div's text - go up to productWrapper level, and then find the div with .quantity class
         $(this)
           .closest(".productWrapper") // get the closest productWrapper div
           .find(".quantity") // get the quantity div
           .text(`x ${product.quantity}`); // update the text of the quantity
-          $(".numberOfItems").text(products.length);
 
         // update the items in localStorage
         localStorage.setItem("items", JSON.stringify(products));
         }
       });
-
-     // For calculating the total price of cart
-     function calcQuantity (product) {
-      let cartQuantity = product.quantity
-      let cartPrice = product.price
-      let subTotal = cartPrice*cartQuantity
-      let cartTotal = subTotal.toFixed(2);
-      document.getElementById('total').innerHTML = "Total: £ " + cartTotal;
-     }
-      
     }
   });
-});
+
+  
+  function calcCartData (products) {
+    let cartQuantity = 0;
+    let cartTotal = 0;
+    for (let product of products) {
+      let productTotal = product.price * product.quantity;
+      cartTotal = cartTotal + productTotal;
+      cartQuantity = cartQuantity + product.quantity;
+    }
+
+    cartTotal = cartTotal.toFixed(2);
+    document.getElementById('total').innerHTML = "Total: £ " + cartTotal;
+
+    $(".numberOfItems").text(cartQuantity);
+  }     

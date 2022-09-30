@@ -19,5 +19,7 @@
     }, false)
   }())
 
+  calcCartData(products);
+  
   emailjs.init('C5UgIxMhbwspLoGqM');
   emailjs.sendForm('contact_service', 'contact_form', this)

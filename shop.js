@@ -60,7 +60,12 @@
 
     // Open shoppingCartButton.html and update .numberOfItems div
     $("#shoppingCart").load("template/shoppingCart/shoppingCart.html", () => {
-      $(".numberOfItems").text(products.length);
+      let numberOfItems = 0;
+      for (product of products) {
+        numberOfItems = numberOfItems + product.quantity;        
+      }
+
+      $(".numberOfItems").text(numberOfItems);
       document.getElementById('total').append();
     });
 
