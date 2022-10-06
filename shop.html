@@ -1,132 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Devil Fryer</title>
-  <link rel="icon" type="image/ico" href="./pics/deepfryer.jfif">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet" crossorigin="anonymous">
-  <link href="main.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Devil Fryer</title>
+    <link rel="icon" type="image/ico" href="./pics/deepfryer.jfif" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
 
-  <!-- Load jQuery from a cdn (cloudflare) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <!-- Load bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <!-- Load shop.js -->
-  <script src="shop.js"></script>
-</head>
+    <!-- Load jQuery from a cdn (cloudflare) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Load bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Load shop.js -->
+    <script src="shop.js"></script>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <div id="header"></div>
 
-
-  <div class="container text-center border-bottom">
-    <h1>Our Deep Fried Range</h1>
-    <div class="container d-flex justify-content-around border-bottom p-sm-5">
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Deep Fried Ice Cream<br>£10</p>
-          <img src="/pics/dficecream.jfif" class="card-img-top mymodal" alt="Deep fried ice cream">
-        </div>
-        <div><button class="btn btn-primary add-item" style="margin-left: 16px;">Add item</button></div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Deep Fried Pizza<br>£12</p>
-          <img src="/pics/dfpizza.jfif" class="card-img-top" alt="Deep fried pizza">
-        </div>
-        <div><button class="btn btn-primary add-item" style="margin-left: 16px;">Add item</button></div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Deep Fried Cheese Burger<br>£8</p>
-          <img src="/pics/dfcheeseburger.jpg" class="card-img-top" alt="Deep fried cheese burger">
-        </div>
-        <div><button class="btn btn-primary add-item" style="margin-left: 16px;">Add item</button></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container text-center border-bottom">
-    <div class="container d-flex justify-content-around border-bottom p-sm-5">
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Deep Fried Twix<br>£6</p>
-          <img src="/pics/dftwix.jfif" class="card-img-top mymodal" alt="Deep fried ice cream">
-        </div>
-        <div class="addItem"><button class="btn btn-primary add-item" style="margin-left: 16px;">Add item</button></div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Deep Fried Mars Bar<br>£7</p>
-          <img src="/pics/dfmars.jfif" class="card-img-top" alt="Deep fried pizza">
-        </div>
-        <div><button class="btn btn-primary add-item" style="margin-left: 16px;">Add item</button></div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Deep Fried Double Decker<br>£7</p>
-          <img src="/pics/dfdoubledecker.jfif" class="card-img-top" alt="Deep fried cheese burger">
-        </div>
-        <div><button class="btn btn-primary add-item" style="margin-left: 16px;">Add item</button></div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="container text-center border-bottom">
-    <div class="container d-flex justify-content-around border-bottom p-sm-5">
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Deep Fried Mince Pie<br>£10</p>
-          <img src="/pics/dfmicepie.jfif" class="card-img-top mymodal" alt="Deep fried ice cream">
-        </div>
-        <div><button class="btn btn-primary add-item" style="margin-left: 16px;">Add item</button></div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Deep Fried Creme Egg<br>£6</p>
-          <img src="/pics/dfcremeegg.jfif" class="card-img-top" alt="Deep fried pizza">
-        </div>
-        <div><button class="btn btn-primary add-item" style="margin-left: 16px;">Add item</button></div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">Deep Fried Colin the Caterpillar<br>£12</p>
-          <img src="/pics/dfcolincaterpillar.jfif" class="card-img-top" alt="Deep fried cheese burger">
-        </div>
-        <div><button class="btn btn-primary add-item" style="margin-left: 16px;">Add item</button></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Toast -->
-  <div aria-live="polite" aria-atomic="true">
-      <!-- Content and position of Toast -->
-      <div style="position: absolute; top: 43rem; right: 0;">
-          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="1500" id="addItemToast">
-              <div class="toast-header">
-                <img src="./pics/deepfryer.jfif" class="rounded me-2" width="30" height="30" alt="...">
-                  <strong class="mr-auto">The Devil Fryer</strong>
-                  <button type="button" class="btn-close" id="liveToastBtn" data-bs-dismiss="toast" aria-label="Close"><span aria-hidden="true"></span></button>
-              </div>
-            <div class="toast-body">
-                Item has been added
-            </div>
+    <div class="container text-center border-bottom">
+      <h1>Our Deep Fried Range</h1>
+      <div class="container d-flex justify-content-around border-bottom p-sm-5">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Deep Fried Ice Cream<br />£10</p>
+            <img
+              src="/pics/dficecream.jfif"
+              class="card-img-top mymodal"
+              alt="Deep fried ice cream"
+            />
           </div>
+          <div>
+            <button class="btn btn-primary add-item" style="margin-left: 16px">
+              Add item
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Deep Fried Pizza<br />£12</p>
+            <img
+              src="/pics/dfpizza.jfif"
+              class="card-img-top"
+              alt="Deep fried pizza"
+            />
+          </div>
+          <div>
+            <button class="btn btn-primary add-item" style="margin-left: 16px">
+              Add item
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Deep Fried Cheese Burger<br />£8</p>
+            <img
+              src="/pics/dfcheeseburger.jpg"
+              class="card-img-top"
+              alt="Deep fried cheese burger"
+            />
+          </div>
+          <div>
+            <button class="btn btn-primary add-item" style="margin-left: 16px">
+              Add item
+            </button>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
 
-  <!-- Shopping Cart Button -->
-  <div id="shoppingCart"></div>
+    <div class="container text-center border-bottom">
+      <div class="container d-flex justify-content-around border-bottom p-sm-5">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Deep Fried Twix<br />£6</p>
+            <img
+              src="/pics/dftwix.jfif"
+              class="card-img-top mymodal"
+              alt="Deep fried ice cream"
+            />
+          </div>
+          <div class="addItem">
+            <button class="btn btn-primary add-item" style="margin-left: 16px">
+              Add item
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Deep Fried Mars Bar<br />£7</p>
+            <img
+              src="/pics/dfmars.jfif"
+              class="card-img-top"
+              alt="Deep fried pizza"
+            />
+          </div>
+          <div>
+            <button class="btn btn-primary add-item" style="margin-left: 16px">
+              Add item
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Deep Fried Double Decker<br />£7</p>
+            <img
+              src="/pics/dfdoubledecker.jfif"
+              class="card-img-top"
+              alt="Deep fried cheese burger"
+            />
+          </div>
+          <div>
+            <button class="btn btn-primary add-item" style="margin-left: 16px">
+              Add item
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center border-bottom">
+      <div class="container d-flex justify-content-around border-bottom p-sm-5">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Deep Fried Mince Pie<br />£10</p>
+            <img
+              src="/pics/dfmicepie.jfif"
+              class="card-img-top mymodal"
+              alt="Deep fried ice cream"
+            />
+          </div>
+          <div>
+            <button class="btn btn-primary add-item" style="margin-left: 16px">
+              Add item
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Deep Fried Creme Egg<br />£6</p>
+            <img
+              src="/pics/dfcremeegg.jfif"
+              class="card-img-top"
+              alt="Deep fried pizza"
+            />
+          </div>
+          <div>
+            <button class="btn btn-primary add-item" style="margin-left: 16px">
+              Add item
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">Deep Fried Colin the Caterpillar<br />£12</p>
+            <img
+              src="/pics/dfcolincaterpillar.jfif"
+              class="card-img-top"
+              alt="Deep fried cheese burger"
+            />
+          </div>
+          <div>
+            <button class="btn btn-primary add-item" style="margin-left: 16px">
+              Add item
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div aria-live="polite" aria-atomic="true">
+      <!-- Content and position of Toast -->
+      <div style="position: absolute; top: 43rem; right: 0">
+        <div
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+          data-delay="1500"
+          id="addItemToast"
+        >
+          <div class="toast-header">
+            <img
+              src="./pics/deepfryer.jfif"
+              class="rounded me-2"
+              width="30"
+              height="30"
+              alt="..."
+            />
+            <strong class="mr-auto">The Devil Fryer</strong>
+            <button
+              type="button"
+              class="btn-close"
+              id="liveToastBtn"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="toast-body">Item has been added</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopping Cart Button -->
+    <div id="shoppingCart"></div>
 
     <!-- Footer -->
     <div id="footer"></div>
+    <script>
+      // on document ready
+      $(document).ready(() => {
+        // Load the header.html into the header div, once it's loaded execute callback to add class to headerHome div
+        $("#header").load("template/header/header.html", () => {
+          $("#headerCheckout")
+            .removeClass()
+            .addClass("nav-link active text-black fw-bold");
+        });
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        // Load the footer.html into the footer div, once it's loaded execute callback to add class to footerHome div
+        $("#footer").load("template/footer/footer.html", () => {
+          $("#footerCheckout")
+            .removeClass()
+            .addClass("nav-link active text-black fw-bold");
+        });
+      });
+    </script>
 
-  <script src="shop.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-</body>
+    <script src="shop.js"></script>
+  </body>
 </html>
