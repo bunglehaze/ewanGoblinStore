@@ -27,8 +27,18 @@
   );
 })();
 
+// Display Cart info and total
+
+let searchButton = document.querySelector("#submit");
+
+searchButton.addEventListener("click", () => {
+  console.log("button pressed");
+  getCustomerInfo();
+  document.querySelector("#submit").disabled = true;
+});
+// To gather info for the email
 function getCustomerInfo() {
-  //get the products and get the name of them, add these to productnames
+  //get the products and get the name of them, add these to productNames
   products = JSON.parse(localStorage.getItem("items"));
   let productNames = "";
   for (i in products) {
@@ -53,7 +63,7 @@ function getCustomerInfo() {
     email: $("#email").val(),
     address: $("#address").val(),
     city: $("#city").val(),
-    county: $("#county").val(),
+    country: $("#country").val(),
     postcode: $("#postcode").val(),
     phone: $("#phoneNo").val(),
     cardName: $("#cardName").val(),
@@ -70,7 +80,7 @@ function getCustomerInfo() {
 //send the email using the customerInfo object
 function sendEmail(customerInfo) {
   emailjs
-    .send("service_y9kr4zh", "contact_form", customerInfo, "C5UgIxMhbwspLoGqM")
+    .send("service_gth306w", "contact_form", customerInfo, "C5UgIxMhbwspLoGqM")
     .then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
