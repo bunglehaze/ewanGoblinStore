@@ -74,6 +74,21 @@ searchButton.addEventListener("click", () => {
     };
     //this returns the info ready for the sendEmail function to use it
     return customerInfo;
+
+    function sendEmail() {
+      var customerInfo = {
+        from_name: document.getElementById("fullName"),
+        from_name: document.getElementById(""),
+        from_name: document.getElementById(""),
+        from_name: document.getElementById(""),
+        from_name: document.getElementById(""),
+        from_name: document.getElementById(""),
+        from_name: document.getElementById(""),
+        from_name: document.getElementById(""),
+        from_name: document.getElementById(""),
+        from_name: document.getElementById(""),
+      };
+    }
   }
 
   //send the email using the customerInfo object
@@ -81,7 +96,7 @@ searchButton.addEventListener("click", () => {
     emailjs
       .send(
         "service_gth306w",
-        "contact_form",
+        "template_sajcd4i",
         customerInfo,
         "A75Zj7ESvJUX1IO78"
       )
