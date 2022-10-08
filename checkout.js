@@ -78,15 +78,16 @@ searchButton.addEventListener("click", () => {
     function sendEmail() {
       var customerInfo = {
         from_name: document.getElementById("fullName"),
-        from_name: document.getElementById(""),
-        from_name: document.getElementById(""),
-        from_name: document.getElementById(""),
-        from_name: document.getElementById(""),
-        from_name: document.getElementById(""),
-        from_name: document.getElementById(""),
-        from_name: document.getElementById(""),
-        from_name: document.getElementById(""),
-        from_name: document.getElementById(""),
+        from_name: document.getElementById("email"),
+        from_name: document.getElementById("address"),
+        from_name: document.getElementById("city"),
+        from_name: document.getElementById("country"),
+        from_name: document.getElementById("postcode"),
+        from_name: document.getElementById("phoneNo"),
+        from_name: document.getElementById("cardName"),
+        from_name: document.getElementById("cardNum"),
+        from_name: document.getElementById("expDate"),
+        from_name: document.getElementById("ccvNum"),
       };
     }
   }
