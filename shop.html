@@ -52,7 +52,7 @@
           <div class="card-body">
             <p class="card-text">Deep Fried Pizza<br />£12</p>
             <img
-              src="/pics/dfpizza.jfif"
+              src="./pics/dfpizza.jfif"
               class="card-img-top"
               alt="Deep fried pizza"
             />
@@ -67,7 +67,7 @@
           <div class="card-body">
             <p class="card-text">Deep Fried Cheese Burger<br />£8</p>
             <img
-              src="/pics/dfcheeseburger.jpg"
+              src="./pics/dfcheeseburger.jpg"
               class="card-img-top"
               alt="Deep fried cheese burger"
             />
@@ -222,6 +222,22 @@
 
     <!-- Footer -->
     <div id="footer"></div>
+
+    <!-- Load jQuery from a cdn (cloudflare) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Load bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
     <script>
       // on document ready
       $(document).ready(() => {
@@ -238,21 +254,13 @@
             .removeClass()
             .addClass("nav-link active text-black fw-bold");
         });
+
+        // Load shoppingCart.html
+        $("#shoppingCart").load("template/shoppingCart/shoppingCart.html");
       });
     </script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
+    <!-- Load shop.js file -->
     <script src="shop.js"></script>
   </body>
 </html>
