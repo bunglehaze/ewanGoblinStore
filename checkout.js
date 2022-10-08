@@ -1,3 +1,23 @@
+// on document ready
+$(document).ready(() => {
+  // Load the header.html into the header div, once it's loaded execute callback to add class to headerHome div
+  $("#header").load("template/header/header.html", () => {
+    $("#headerShop")
+      .removeClass()
+      .addClass("nav-link active text-black fw-bold");
+  });
+
+  // Load the footer.html into the footer div, once it's loaded execute callback to add class to footerHome div
+  $("#footer").load("template/footer/footer.html", () => {
+    $("#footerShop")
+      .removeClass()
+      .addClass("nav-link active text-black fw-bold");
+  });
+
+  // Load shoppingCart.html
+  $("#shoppingCart").load("./template/ShoppingCart/shoppingCart.html");
+});
+
 // Disabling form submissions if there are invalid fields
 (function () {
   "use strict";
