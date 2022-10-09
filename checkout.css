@@ -1,6 +1,6 @@
 /*
 CSS File for checkout
-*/ 
+*/
 
 /*                                        
  #     #                                    
@@ -12,11 +12,11 @@ CSS File for checkout
  #     # ###### #    # #####  ###### #    #    
 */
 .navbar {
-    background-color: #ff0d05;
-    color: black;
-    height: 125px;
-  }
-  /*                                
+  background-color: #ff0d05;
+  color: black;
+  height: 125px;
+}
+/*                                
    #######                                   
    #        ####   ####  ##### ###### #####  
    #       #    # #    #   #   #      #    # 
@@ -25,11 +25,11 @@ CSS File for checkout
    #       #    # #    #   #   #      #   #  
    #        ####   ####    #   ###### #    #    
   */
-  footer {
-    background-color: #2b9921;
-    height: 125px;
-  }                             
-  /*                      
+footer {
+  background-color: #2b9921;
+  height: 125px;
+}
+/*                      
    #     #                 
    ##   ##   ##   # #    # 
    # # # #  #  #  # ##   # 
@@ -38,216 +38,217 @@ CSS File for checkout
    #     # #    # # #   ## 
    #     # #    # # #    # 
   */
-  .carousel .carousel-item img {
-    height: 350px;
-    width: 100%;
-  }
-  
-  body {
-      background-color: rgb(254, 254, 255);
-      background-size: 500px 500px;
-      background-image: 
-          linear-gradient(
-              90deg,
-              transparent 10%,
-              rgba(0, 6, 90, 0.3) 10%,
-              rgba(0, 0, 90, 0.3) 20%,
-              transparent 20%,
-              transparent 22%,
-              rgba(0, 0, 90, 0.3) 22%,
-              rgba(0, 0, 90, 0.3) 32%,
-              transparent 32%,
-  
-              transparent 62%,
-              rgba(0, 0, 90, 0.3) 62%,
-              rgba(0, 0, 90, 0.3) 64%,
-              transparent 64%,
-              transparent 66%, 
-              rgba(0, 0, 90, 0.3) 66%,
-              rgba(0, 0, 90, 0.3) 68%,
-              transparent 68%,
-              transparent 70%,
-              rgba(0, 0, 90, 0.3) 70%,
-              rgba(0, 0, 90, 0.3) 80%,
-              transparent 80%,
-              transparent 82%,
-              rgba(0, 0, 90, 0.3) 82%,
-              rgba(0, 0, 90, 0.3) 84%,
-              transparent 84%,
-              transparent 86%,
-              rgba(90, 0, 0, 0.3) 86%,
-              rgba(0, 0, 90, 0.3) 88%,
-              transparent 88%
-          ),
-          linear-gradient(
-              transparent 10%,
-              rgba(0, 0, 90, 0.3) 10%,
-              rgba(0, 0, 90, 0.3) 20%,
-              transparent 20%,
-              transparent 22%,
-              rgba(0, 0, 90, 0.3) 22%,
-              rgba(0, 0, 90, 0.3) 32%,
-              transparent 32%,
-  
-              transparent 62%,
-              rgba(0, 0, 90, 0.3) 62%,
-              rgba(0, 0, 90, 0.3) 64%,
-              transparent 64%,
-              transparent 66%, 
-              rgba(0, 0, 90, 0.3) 66%,
-              rgba(0, 0, 90, 0.3) 68%,
-              transparent 68%,
-              transparent 70%,
-              rgba(0, 0, 90, 0.3) 70%,
-              rgba(0, 0, 90, 0.3) 80%,
-              transparent 80%,
-              transparent 82%,
-              rgba(0, 0, 90, 0.3) 82%,
-              rgba(0, 0, 90, 0.3) 84%,
-              transparent 84%,
-              transparent 86%,
-              rgba(0, 0, 90, 0.3) 86%,
-              rgba(0, 0, 90, 0.3) 88%,
-              transparent 88%
-          ),
-          linear-gradient(
-              transparent 0%,
-              rgba(0, 70, 0, 0.3) 0%,
-              rgba(0, 70, 0, 0.3) 6%,
-              transparent 6%,
-              transparent 36%,
-              rgba(0, 70, 0, 0.3) 36%,
-              rgba(0, 70, 0, 0.3) 46%,
-              transparent 46%,
-              transparent 48%,
-              rgba(0, 70, 0, 0.3) 48%,
-              rgba(0, 70, 0, 0.3) 58%,
-              transparent 58%,
-              transparent 92%,
-              rgba(0, 70, 0, 0.3) 92%,
-              rgba(0, 70, 0, 0.3) 98%,
-              transparent 98%
-          ),
-          linear-gradient(
-              90deg,
-              transparent 0%,
-              rgba(0, 70, 0, 0.3) 0%,
-              rgba(0, 70, 0, 0.3) 6%,
-              transparent 6%,
-              transparent 36%,
-              rgba(0, 70, 0, 0.3) 36%,
-              rgba(0, 70, 0, 0.3) 46%,
-              transparent 46%,
-              transparent 48%,
-              rgba(0, 70, 0, 0.3) 48%,
-              rgba(0, 70, 0, 0.3) 58%,
-              transparent 58%,
-              transparent 92%,
-              rgba(0, 70, 0, 0.3) 92%,
-              rgba(0, 70, 0, 0.3) 98%,
-              transparent 98%
-          )
-      ;
-  }
- 
-  /* Checkout */
-  
+.carousel .carousel-item img {
+  height: 350px;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(254, 254, 255);
+  background-size: 500px 500px;
+  background-image: linear-gradient(
+      90deg,
+      transparent 10%,
+      rgba(0, 6, 90, 0.3) 10%,
+      rgba(0, 0, 90, 0.3) 20%,
+      transparent 20%,
+      transparent 22%,
+      rgba(0, 0, 90, 0.3) 22%,
+      rgba(0, 0, 90, 0.3) 32%,
+      transparent 32%,
+
+      transparent 62%,
+      rgba(0, 0, 90, 0.3) 62%,
+      rgba(0, 0, 90, 0.3) 64%,
+      transparent 64%,
+      transparent 66%,
+      rgba(0, 0, 90, 0.3) 66%,
+      rgba(0, 0, 90, 0.3) 68%,
+      transparent 68%,
+      transparent 70%,
+      rgba(0, 0, 90, 0.3) 70%,
+      rgba(0, 0, 90, 0.3) 80%,
+      transparent 80%,
+      transparent 82%,
+      rgba(0, 0, 90, 0.3) 82%,
+      rgba(0, 0, 90, 0.3) 84%,
+      transparent 84%,
+      transparent 86%,
+      rgba(90, 0, 0, 0.3) 86%,
+      rgba(0, 0, 90, 0.3) 88%,
+      transparent 88%
+    ),
+    linear-gradient(
+      transparent 10%,
+      rgba(0, 0, 90, 0.3) 10%,
+      rgba(0, 0, 90, 0.3) 20%,
+      transparent 20%,
+      transparent 22%,
+      rgba(0, 0, 90, 0.3) 22%,
+      rgba(0, 0, 90, 0.3) 32%,
+      transparent 32%,
+
+      transparent 62%,
+      rgba(0, 0, 90, 0.3) 62%,
+      rgba(0, 0, 90, 0.3) 64%,
+      transparent 64%,
+      transparent 66%,
+      rgba(0, 0, 90, 0.3) 66%,
+      rgba(0, 0, 90, 0.3) 68%,
+      transparent 68%,
+      transparent 70%,
+      rgba(0, 0, 90, 0.3) 70%,
+      rgba(0, 0, 90, 0.3) 80%,
+      transparent 80%,
+      transparent 82%,
+      rgba(0, 0, 90, 0.3) 82%,
+      rgba(0, 0, 90, 0.3) 84%,
+      transparent 84%,
+      transparent 86%,
+      rgba(0, 0, 90, 0.3) 86%,
+      rgba(0, 0, 90, 0.3) 88%,
+      transparent 88%
+    ),
+    linear-gradient(
+      transparent 0%,
+      rgba(0, 70, 0, 0.3) 0%,
+      rgba(0, 70, 0, 0.3) 6%,
+      transparent 6%,
+      transparent 36%,
+      rgba(0, 70, 0, 0.3) 36%,
+      rgba(0, 70, 0, 0.3) 46%,
+      transparent 46%,
+      transparent 48%,
+      rgba(0, 70, 0, 0.3) 48%,
+      rgba(0, 70, 0, 0.3) 58%,
+      transparent 58%,
+      transparent 92%,
+      rgba(0, 70, 0, 0.3) 92%,
+      rgba(0, 70, 0, 0.3) 98%,
+      transparent 98%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 70, 0, 0.3) 0%,
+      rgba(0, 70, 0, 0.3) 6%,
+      transparent 6%,
+      transparent 36%,
+      rgba(0, 70, 0, 0.3) 36%,
+      rgba(0, 70, 0, 0.3) 46%,
+      transparent 46%,
+      transparent 48%,
+      rgba(0, 70, 0, 0.3) 48%,
+      rgba(0, 70, 0, 0.3) 58%,
+      transparent 58%,
+      transparent 92%,
+      rgba(0, 70, 0, 0.3) 92%,
+      rgba(0, 70, 0, 0.3) 98%,
+      transparent 98%
+    );
+}
+
+/* Checkout */
+
+#cartTot {
+  color: white;
+}
 #acceptedCards {
-    color: #fff;
+  color: #fff;
 }
 
 #submitDetails {
-    color:rgba(0, 0, 0, 0.993)
+  color: rgba(0, 0, 0, 0.993);
 }
 
-  label,
-  li,
-  h1,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-      color: rgb(252, 248, 248);
-  }
+label,
+li,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: rgb(252, 248, 248);
+}
 
-  .row {
-      margin: 0;
-  }
+.row {
+  margin: 0;
+}
 
-  .form-control::placeholder {
-      color: rgb(253, 251, 251);
-  }
+.form-control::placeholder {
+  color: rgb(253, 251, 251);
+}
 
-  .form-control {
-      height: 50px;
-      border: none;
-      border-bottom: 2px solid #313131;
-      background: none;
-      font-size: 18px;
-      border-radius: 0px;
-      margin-top: 10px;
-      color: #fff;
-  }
+.form-control {
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #313131;
+  background: none;
+  font-size: 18px;
+  border-radius: 0px;
+  margin-top: 10px;
+  color: #fff;
+}
 
-  .form-control:active {
-      outline: none;
-      border: none;
-  }
+.form-control:active {
+  outline: none;
+  border: none;
+}
 
-  .form-control:focus {
-      background: none;
-      box-shadow: none;
-      outline: none;
-      border: none;
-      color: #fff;
-      border-bottom: 2px solid #f7f8fa;
-      outline: 0;
-  }
+.form-control:focus {
+  background: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #f7f8fa;
+  outline: 0;
+}
 
-  .form-control:hover {
-      border-bottom: 2px solid #f7f9fa;
-      outline: none;
-      border-color: none;
-  }
+.form-control:hover {
+  border-bottom: 2px solid #f7f9fa;
+  outline: none;
+  border-color: none;
+}
 
+.container {
+  box-shadow: 0 0 10px rgba(7, 0, 0, 0.5);
+  background-color: rgba(8, 8, 8, 0.5);
+  border-radius: 8px;
+}
+
+button {
+  background-color: #495057 !important;
+  border-color: #495057 !important;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .mob-pl-0 {
+    padding-left: 0px !important;
+  }
+}
+
+@media (max-width: 576px) {
   .container {
-      box-shadow: 0 0 10px rgba(7, 0, 0, 0.5);
-      background-color: rgba(8, 8, 8, 0.5);
-      border-radius: 8px;
+    width: 90%;
   }
-
-  button {
-      background-color: #495057 !important;
-      border-color: #495057 !important;
-      height: 50px;
-      line-height: 50px;
-      margin-top: 10px;
-  }
-
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-  }
-
-  @media(max-width: 992px) {
-      .mob-pl-0 {
-          padding-left: 0px !important;
-      }
-  }
-
-  @media(max-width:576px) {
-      .container {
-          width: 90%;
-      }
 
   .checkcontainer {
-      max-width: 960px;
-      text-align: center;
-    }
+    max-width: 960px;
+    text-align: center;
   }
-  
- .mb-0 {
-    color: white;
-  }
+}
+
+.mb-0 {
+  color: white;
+}

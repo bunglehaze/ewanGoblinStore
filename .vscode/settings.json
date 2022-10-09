@@ -1,3 +1,9 @@
 {
   "liveServer.settings.port": 5502
 }
+
+{
+  "jshint.options": {
+    "esversion": 6
+  }
+}
